@@ -1,0 +1,118 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29519.87
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XPike.EventBus", "XPike.EventBus\XPike.EventBus.csproj", "{236C23A2-B571-472B-80F5-4CB2348599FC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{72453031-3F1B-4365-9610-CC054BC731AA}"
+	ProjectSection(SolutionItems) = preProject
+		..\.editorconfig = ..\.editorconfig
+		..\.gitignore = ..\.gitignore
+		..\azure-pipelines.yml = ..\azure-pipelines.yml
+		common.build.props = common.build.props
+		..\xpike-package-icon.png = ..\xpike-package-icon.png
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{30D098AD-480A-4E3B-BC3F-07F9F74EB46F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "README", "README", "{144C8DE1-64C6-40BF-8CC5-940929D4045F}"
+	ProjectSection(SolutionItems) = preProject
+		..\CHANGELOG.md = ..\CHANGELOG.md
+		..\LICENSE = ..\LICENSE
+		..\README.md = ..\README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "examples", "examples", "{DF079D41-1ECE-420B-BDB3-1545A075A606}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "netcore3", "netcore3", "{4A9EE2CF-A2AA-4E82-BBA0-22167A92DFD7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{383DDA58-8537-45B1-8CFC-DC7C0BA933CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example.Library", "..\examples\Example.Library\Example.Library.csproj", "{596B60DC-256A-4C19-A00D-4C39AC6FFDA1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XPikeEventBus", "..\examples\netcore3\XPikeEventBus\XPikeEventBus.csproj", "{97050038-DDF7-4AC8-B4EF-9B649F393A4D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XPikeEventBusConsole", "..\netcore3\XPikeEventBusConsole\XPikeEventBusConsole.csproj", "{B26860C4-9405-490E-ACC8-E54F1BE02844}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XPike.EventBus.UnitTests", "..\tests\XPike.EventBus.UnitTests\XPike.EventBus.UnitTests.csproj", "{31CEFDE3-458A-48DB-B08B-EDFE1FA54EAD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XPike.EventBus.Redis", "XPike.EventBus.Redis\XPike.EventBus.Redis.csproj", "{0F2AD792-C15F-4283-B8FA-FF934849A3F4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "wip", "wip", "{2E35E92A-8EC3-461A-B97D-22ACD9D69698}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XPike.Drivers.EventBus", "..\wip\XPike.Drivers.EventBus\XPike.Drivers.EventBus.csproj", "{C5363E86-B454-4696-8874-CEF28ADE8357}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XPike.Drivers.EventBus.Declarative", "..\wip\XPike.Drivers.EventBus.Declarative\XPike.Drivers.EventBus.Declarative.csproj", "{97BFFF56-6BE3-4F20-AD8E-00ABAE8B622E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XPike.EventBus.RabbitMQ", "..\wip\XPike.EventBus.RabbitMQ\XPike.EventBus.RabbitMQ.csproj", "{517CD5E2-F682-4A36-9154-E89EDD2C652D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XPikeEventBus2", "..\examples\netcore3\XPikeEventBus2\XPikeEventBus2.csproj", "{604FC675-05B6-409C-B639-4EB4D4A5996B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{236C23A2-B571-472B-80F5-4CB2348599FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{236C23A2-B571-472B-80F5-4CB2348599FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{236C23A2-B571-472B-80F5-4CB2348599FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{236C23A2-B571-472B-80F5-4CB2348599FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{596B60DC-256A-4C19-A00D-4C39AC6FFDA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{596B60DC-256A-4C19-A00D-4C39AC6FFDA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{596B60DC-256A-4C19-A00D-4C39AC6FFDA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{596B60DC-256A-4C19-A00D-4C39AC6FFDA1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97050038-DDF7-4AC8-B4EF-9B649F393A4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97050038-DDF7-4AC8-B4EF-9B649F393A4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97050038-DDF7-4AC8-B4EF-9B649F393A4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97050038-DDF7-4AC8-B4EF-9B649F393A4D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B26860C4-9405-490E-ACC8-E54F1BE02844}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B26860C4-9405-490E-ACC8-E54F1BE02844}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B26860C4-9405-490E-ACC8-E54F1BE02844}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B26860C4-9405-490E-ACC8-E54F1BE02844}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31CEFDE3-458A-48DB-B08B-EDFE1FA54EAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31CEFDE3-458A-48DB-B08B-EDFE1FA54EAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31CEFDE3-458A-48DB-B08B-EDFE1FA54EAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31CEFDE3-458A-48DB-B08B-EDFE1FA54EAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F2AD792-C15F-4283-B8FA-FF934849A3F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F2AD792-C15F-4283-B8FA-FF934849A3F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F2AD792-C15F-4283-B8FA-FF934849A3F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F2AD792-C15F-4283-B8FA-FF934849A3F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5363E86-B454-4696-8874-CEF28ADE8357}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5363E86-B454-4696-8874-CEF28ADE8357}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5363E86-B454-4696-8874-CEF28ADE8357}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5363E86-B454-4696-8874-CEF28ADE8357}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97BFFF56-6BE3-4F20-AD8E-00ABAE8B622E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97BFFF56-6BE3-4F20-AD8E-00ABAE8B622E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97BFFF56-6BE3-4F20-AD8E-00ABAE8B622E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97BFFF56-6BE3-4F20-AD8E-00ABAE8B622E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{517CD5E2-F682-4A36-9154-E89EDD2C652D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{517CD5E2-F682-4A36-9154-E89EDD2C652D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{517CD5E2-F682-4A36-9154-E89EDD2C652D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{517CD5E2-F682-4A36-9154-E89EDD2C652D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{604FC675-05B6-409C-B639-4EB4D4A5996B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{604FC675-05B6-409C-B639-4EB4D4A5996B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{604FC675-05B6-409C-B639-4EB4D4A5996B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{604FC675-05B6-409C-B639-4EB4D4A5996B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{236C23A2-B571-472B-80F5-4CB2348599FC} = {30D098AD-480A-4E3B-BC3F-07F9F74EB46F}
+		{4A9EE2CF-A2AA-4E82-BBA0-22167A92DFD7} = {DF079D41-1ECE-420B-BDB3-1545A075A606}
+		{596B60DC-256A-4C19-A00D-4C39AC6FFDA1} = {DF079D41-1ECE-420B-BDB3-1545A075A606}
+		{97050038-DDF7-4AC8-B4EF-9B649F393A4D} = {4A9EE2CF-A2AA-4E82-BBA0-22167A92DFD7}
+		{B26860C4-9405-490E-ACC8-E54F1BE02844} = {4A9EE2CF-A2AA-4E82-BBA0-22167A92DFD7}
+		{31CEFDE3-458A-48DB-B08B-EDFE1FA54EAD} = {383DDA58-8537-45B1-8CFC-DC7C0BA933CC}
+		{0F2AD792-C15F-4283-B8FA-FF934849A3F4} = {30D098AD-480A-4E3B-BC3F-07F9F74EB46F}
+		{C5363E86-B454-4696-8874-CEF28ADE8357} = {2E35E92A-8EC3-461A-B97D-22ACD9D69698}
+		{97BFFF56-6BE3-4F20-AD8E-00ABAE8B622E} = {2E35E92A-8EC3-461A-B97D-22ACD9D69698}
+		{517CD5E2-F682-4A36-9154-E89EDD2C652D} = {2E35E92A-8EC3-461A-B97D-22ACD9D69698}
+		{604FC675-05B6-409C-B639-4EB4D4A5996B} = {4A9EE2CF-A2AA-4E82-BBA0-22167A92DFD7}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0DE4EAE2-5E11-480E-BE84-967CC56D9284}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="XPike.IoC.SimpleInjector" Version="1.0.3" />
+    <PackageReference Include="XPike.Logging" Version="1.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\examples\Example.Library\Example.Library.csproj" />
+    <ProjectReference Include="..\..\src\XPike.EventBus.Redis\XPike.EventBus.Redis.csproj" />
+  </ItemGroup>
+
+</Project>

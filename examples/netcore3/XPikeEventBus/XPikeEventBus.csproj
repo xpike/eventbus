@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="XPike.Configuration.Microsoft.AspNetCore" Version="1.0.0" />
+    <PackageReference Include="XPike.IoC.Microsoft.AspNetCore" Version="1.0.3" />
+    <PackageReference Include="XPike.Logging.Microsoft.AspNetCore" Version="1.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\src\XPike.EventBus.Redis\XPike.EventBus.Redis.csproj" />
+    <ProjectReference Include="..\..\Example.Library\Example.Library.csproj" />
+  </ItemGroup>
+
+</Project>
