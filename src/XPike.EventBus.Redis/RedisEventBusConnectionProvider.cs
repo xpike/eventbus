@@ -31,20 +31,20 @@ namespace XPike.EventBus.Redis
             return _connections.TryGetValue(connectionName, out var subscriber)
                 ? subscriber
                 : _connections[connectionName] =
-                    new RedisEventBusConnection(await (await _provider.GetConnectionAsync(connectionName, timeout, ct))
-                        .GetSubscriberAsync());
+                    new RedisEventBusConnection(await (await _provider.GetConnectionAsync(connectionName, timeout, ct).ConfigureAwait(false))
+                        .GetSubscriberAsync().ConfigureAwait(false));
         }
 
         public async Task<IEventBusSubscriberConnection> GetSubscriberConnectionAsync(string connectionName,
             PublicationType publicationType,
             TimeSpan? timeout = null,
             CancellationToken? ct = null) =>
-            await GetConnectionAsync(connectionName, publicationType, timeout, ct);
+            await GetConnectionAsync(connectionName, publicationType, timeout, ct).ConfigureAwait(false);
 
         public async Task<IEventBusPublisherConnection> GetPublisherConnectionAsync(string connectionName,
             PublicationType publicationType, 
             TimeSpan? timeout = null,
             CancellationToken? ct = null) =>
-            await GetConnectionAsync(connectionName, publicationType, timeout, ct);
+            await GetConnectionAsync(connectionName, publicationType, timeout, ct).ConfigureAwait(false);
     }
 }

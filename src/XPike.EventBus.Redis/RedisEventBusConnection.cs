@@ -19,17 +19,17 @@ namespace XPike.EventBus.Redis
         }
 
         public async Task<bool> PublishAsync<TMessage>(string targetName, TMessage message, TimeSpan? timeout = null, CancellationToken? ct = null) =>
-            await _subscriber.PublishAsync(targetName, JsonConvert.SerializeObject(message)) > 0;
+            await _subscriber.PublishAsync(targetName, JsonConvert.SerializeObject(message)).ConfigureAwait(false) > 0;
 
         public async Task<bool> SubscribeAsync<TMessage>(string targetName, Func<TMessage, Task<bool>> asyncHandler, TimeSpan? timeout = null, CancellationToken? ct = null)
         {
             if (!_handlers.ContainsKey(targetName))
             {
-                var channel = _handlers[targetName] = await _subscriber.SubscribeAsync(targetName);
+                var channel = _handlers[targetName] = await _subscriber.SubscribeAsync(targetName).ConfigureAwait(false);
 
                 channel.OnMessage(async message =>
                 {
-                    await asyncHandler(JsonConvert.DeserializeObject<TMessage>(message.Message.ToString()));
+                    await asyncHandler(JsonConvert.DeserializeObject<TMessage>(message.Message.ToString())).ConfigureAwait(false);
                 });
             }
 

@@ -7,7 +7,8 @@
 
   <ItemGroup>
     <PackageReference Include="XPike.IoC.SimpleInjector" Version="1.0.3" />
-    <PackageReference Include="XPike.Logging" Version="1.0.0" />
+    <PackageReference Include="XPike.Logging" Version="1.1.0" />
+    <PackageReference Include="XPike.Settings" Version="1.1.3" />
   </ItemGroup>
 
   <ItemGroup>

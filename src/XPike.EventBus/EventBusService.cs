@@ -31,8 +31,8 @@ namespace XPike.EventBus
             if (!_providers.TryGetValue(connectionName, out var provider))
                 provider = _defaultProvider;
 
-            var connection = await provider.GetPublisherConnectionAsync(connectionName, publicationType, timeout, ct);
-            return await connection.PublishAsync(targetName, message, timeout, ct);
+            var connection = await provider.GetPublisherConnectionAsync(connectionName, publicationType, timeout, ct).ConfigureAwait(false);
+            return await connection.PublishAsync(targetName, message, timeout, ct).ConfigureAwait(false);
         }
 
         public async Task<bool> SubscribeAsync<TMessage>(string connectionName, 
@@ -47,8 +47,8 @@ namespace XPike.EventBus
             if (!_providers.TryGetValue(connectionName, out var provider))
                 provider = _defaultProvider;
 
-            var connection = await provider.GetSubscriberConnectionAsync(connectionName, publicationType, timeout, ct);
-            return await connection.SubscribeAsync(targetName, asyncHandler, timeout, ct);
+            var connection = await provider.GetSubscriberConnectionAsync(connectionName, publicationType, timeout, ct).ConfigureAwait(false);
+            return await connection.SubscribeAsync(targetName, asyncHandler, timeout, ct).ConfigureAwait(false);
         }
     }
 }
