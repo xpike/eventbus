@@ -1,6 +1,6 @@
 name: $(ReleaseVersionNumber) Build $(Build)
 variables:
-  ReleaseVersionNumber: 1.1.0
+  ReleaseVersionNumber: 1.1.1
   Build: $[counter(variables['ReleaseVersionNumber'], 1)]
   PrereleaseVersionNumber: $(ReleaseVersionNumber)-dev$(Build)
   AssemblyVersion: $(ReleaseVersionNumber).$(Build)

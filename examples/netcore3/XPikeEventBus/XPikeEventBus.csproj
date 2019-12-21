@@ -5,10 +5,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="XPike.Configuration.Microsoft.AspNetCore" Version="1.1.2" />
+    <PackageReference Include="XPike.Configuration.Microsoft.AspNetCore" Version="1.1.6" />
     <PackageReference Include="XPike.IoC.Microsoft.AspNetCore" Version="1.0.3" />
-    <PackageReference Include="XPike.Logging.Microsoft.AspNetCore" Version="1.1.0" />
-    <PackageReference Include="XPike.Settings.AspNetCore" Version="1.1.3" />
+    <PackageReference Include="XPike.Logging.Microsoft.AspNetCore" Version="1.1.1" />
+    <PackageReference Include="XPike.Settings.AspNetCore" Version="1.1.4" />
   </ItemGroup>
 
   <ItemGroup>

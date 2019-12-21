@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="XPike.Redis" Version="1.1.0" />
+    <PackageReference Include="XPike.Redis" Version="1.1.1" />
   </ItemGroup>
 
   <ItemGroup>
