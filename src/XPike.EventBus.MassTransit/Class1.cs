@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace XPike.EventBus.RabbitMQ
+namespace XPike.EventBus.MassTransit
 {
     public class Class1
     {

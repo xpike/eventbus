@@ -29,15 +29,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "netcore3", "netcore3", "{4A
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{383DDA58-8537-45B1-8CFC-DC7C0BA933CC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example.Library", "..\examples\Example.Library\Example.Library.csproj", "{596B60DC-256A-4C19-A00D-4C39AC6FFDA1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Example.Library", "..\examples\Example.Library\Example.Library.csproj", "{596B60DC-256A-4C19-A00D-4C39AC6FFDA1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XPikeEventBus", "..\examples\netcore3\XPikeEventBus\XPikeEventBus.csproj", "{97050038-DDF7-4AC8-B4EF-9B649F393A4D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XPikeEventBus", "..\examples\netcore3\XPikeEventBus\XPikeEventBus.csproj", "{97050038-DDF7-4AC8-B4EF-9B649F393A4D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XPikeEventBusConsole", "..\netcore3\XPikeEventBusConsole\XPikeEventBusConsole.csproj", "{B26860C4-9405-490E-ACC8-E54F1BE02844}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XPikeEventBusConsole", "..\netcore3\XPikeEventBusConsole\XPikeEventBusConsole.csproj", "{B26860C4-9405-490E-ACC8-E54F1BE02844}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XPike.EventBus.UnitTests", "..\tests\XPike.EventBus.UnitTests\XPike.EventBus.UnitTests.csproj", "{31CEFDE3-458A-48DB-B08B-EDFE1FA54EAD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XPike.EventBus.UnitTests", "..\tests\XPike.EventBus.UnitTests\XPike.EventBus.UnitTests.csproj", "{31CEFDE3-458A-48DB-B08B-EDFE1FA54EAD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XPike.EventBus.Redis", "XPike.EventBus.Redis\XPike.EventBus.Redis.csproj", "{0F2AD792-C15F-4283-B8FA-FF934849A3F4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XPike.EventBus.Redis", "XPike.EventBus.Redis\XPike.EventBus.Redis.csproj", "{0F2AD792-C15F-4283-B8FA-FF934849A3F4}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "wip", "wip", "{2E35E92A-8EC3-461A-B97D-22ACD9D69698}"
 EndProject
@@ -47,7 +47,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XPike.Drivers.EventBus.Decl
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XPike.EventBus.RabbitMQ", "..\wip\XPike.EventBus.RabbitMQ\XPike.EventBus.RabbitMQ.csproj", "{517CD5E2-F682-4A36-9154-E89EDD2C652D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XPikeEventBus2", "..\examples\netcore3\XPikeEventBus2\XPikeEventBus2.csproj", "{604FC675-05B6-409C-B639-4EB4D4A5996B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XPikeEventBus2", "..\examples\netcore3\XPikeEventBus2\XPikeEventBus2.csproj", "{604FC675-05B6-409C-B639-4EB4D4A5996B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XPike.EventBus.MassTransit.RabbitMQ", "XPike.EventBus.MassTransit.RabbitMQ\XPike.EventBus.MassTransit.RabbitMQ.csproj", "{C27A2BC8-11FC-4BD5-B937-FAE65CBCA2A8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XPike.EventBus.MassTransit", "XPike.EventBus.MassTransit\XPike.EventBus.MassTransit.csproj", "{6CC3A969-7384-46B0-AEE0-77F153CA91EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XPikeMassTransit", "..\examples\netcore3\XPikeMassTransit\XPikeMassTransit.csproj", "{78482291-E1ED-4FBE-9372-6159C9C3339C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XPikeMassTransitConsole", "..\examples\netcore3\XPikeMassTransitConsole\XPikeMassTransitConsole.csproj", "{F5210D00-0DC7-45C2-996C-210C225A957F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XPikeMassTransitCoreService", "..\examples\netcore3\XPikeMassTransitCoreService\XPikeMassTransitCoreService\XPikeMassTransitCoreService.csproj", "{1C3D83C6-396B-4A37-835D-3A5DC6F07ED4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -95,6 +105,24 @@ Global
 		{604FC675-05B6-409C-B639-4EB4D4A5996B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{604FC675-05B6-409C-B639-4EB4D4A5996B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{604FC675-05B6-409C-B639-4EB4D4A5996B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C27A2BC8-11FC-4BD5-B937-FAE65CBCA2A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C27A2BC8-11FC-4BD5-B937-FAE65CBCA2A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C27A2BC8-11FC-4BD5-B937-FAE65CBCA2A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CC3A969-7384-46B0-AEE0-77F153CA91EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CC3A969-7384-46B0-AEE0-77F153CA91EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CC3A969-7384-46B0-AEE0-77F153CA91EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78482291-E1ED-4FBE-9372-6159C9C3339C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78482291-E1ED-4FBE-9372-6159C9C3339C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78482291-E1ED-4FBE-9372-6159C9C3339C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78482291-E1ED-4FBE-9372-6159C9C3339C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5210D00-0DC7-45C2-996C-210C225A957F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5210D00-0DC7-45C2-996C-210C225A957F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5210D00-0DC7-45C2-996C-210C225A957F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5210D00-0DC7-45C2-996C-210C225A957F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C3D83C6-396B-4A37-835D-3A5DC6F07ED4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C3D83C6-396B-4A37-835D-3A5DC6F07ED4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C3D83C6-396B-4A37-835D-3A5DC6F07ED4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C3D83C6-396B-4A37-835D-3A5DC6F07ED4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -109,8 +137,13 @@ Global
 		{0F2AD792-C15F-4283-B8FA-FF934849A3F4} = {30D098AD-480A-4E3B-BC3F-07F9F74EB46F}
 		{C5363E86-B454-4696-8874-CEF28ADE8357} = {2E35E92A-8EC3-461A-B97D-22ACD9D69698}
 		{97BFFF56-6BE3-4F20-AD8E-00ABAE8B622E} = {2E35E92A-8EC3-461A-B97D-22ACD9D69698}
-		{517CD5E2-F682-4A36-9154-E89EDD2C652D} = {2E35E92A-8EC3-461A-B97D-22ACD9D69698}
+		{517CD5E2-F682-4A36-9154-E89EDD2C652D} = {30D098AD-480A-4E3B-BC3F-07F9F74EB46F}
 		{604FC675-05B6-409C-B639-4EB4D4A5996B} = {4A9EE2CF-A2AA-4E82-BBA0-22167A92DFD7}
+		{C27A2BC8-11FC-4BD5-B937-FAE65CBCA2A8} = {30D098AD-480A-4E3B-BC3F-07F9F74EB46F}
+		{6CC3A969-7384-46B0-AEE0-77F153CA91EA} = {30D098AD-480A-4E3B-BC3F-07F9F74EB46F}
+		{78482291-E1ED-4FBE-9372-6159C9C3339C} = {4A9EE2CF-A2AA-4E82-BBA0-22167A92DFD7}
+		{F5210D00-0DC7-45C2-996C-210C225A957F} = {4A9EE2CF-A2AA-4E82-BBA0-22167A92DFD7}
+		{1C3D83C6-396B-4A37-835D-3A5DC6F07ED4} = {4A9EE2CF-A2AA-4E82-BBA0-22167A92DFD7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0DE4EAE2-5E11-480E-BE84-967CC56D9284}

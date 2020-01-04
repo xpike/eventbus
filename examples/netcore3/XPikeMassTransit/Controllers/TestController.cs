@@ -10,7 +10,7 @@ using Microsoft.Extensions.Logging;
 using XPike.EventBus;
 using XPike.Logging;
 
-namespace XPikeEventBus.Controllers
+namespace XPikeMassTransit.Controllers
 {
     [ApiController]
     [Route("")]
@@ -40,7 +40,7 @@ namespace XPikeEventBus.Controllers
                                                      Origin = Dns.GetHostName(),
                                                      Timestamp = DateTime.UtcNow
                                                  },
-                                                 PublicationType.EnqueueCommand));
+                                                 PublicationType.BroadcastEvent));
 
             if (!(await Task.WhenAll(rabbit)).All(x => x))
                 return Problem("Failed to publish message to Rabbit.");

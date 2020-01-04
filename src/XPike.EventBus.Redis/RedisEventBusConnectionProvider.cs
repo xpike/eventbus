@@ -2,6 +2,7 @@
 using System.Collections.Concurrent;
 using System.Threading;
 using System.Threading.Tasks;
+using XPike.Logging;
 using XPike.Redis;
 
 namespace XPike.EventBus.Redis
@@ -13,10 +14,12 @@ namespace XPike.EventBus.Redis
             new ConcurrentDictionary<string, IRedisEventBusConnection>();
 
         private readonly IRedisConnectionProvider _provider;
+        private readonly ILog<RedisEventBusConnection> _connectionLogger;
 
-        public RedisEventBusConnectionProvider(IRedisConnectionProvider provider)
+        public RedisEventBusConnectionProvider(IRedisConnectionProvider provider, ILog<RedisEventBusConnection> connectionLogger)
         {
             _provider = provider;
+            _connectionLogger = connectionLogger;
         }
 
         private async Task<IRedisEventBusConnection> GetConnectionAsync(string connectionName,
@@ -28,11 +31,13 @@ namespace XPike.EventBus.Redis
                 throw new InvalidOperationException("XPike.EventBus.Redis only supports PublicationType.BroadcastEvent");
 
             connectionName = string.IsNullOrWhiteSpace(connectionName) ? "default" : connectionName;
-            return _connections.TryGetValue(connectionName, out var subscriber)
-                ? subscriber
-                : _connections[connectionName] =
-                    new RedisEventBusConnection(await (await _provider.GetConnectionAsync(connectionName, timeout, ct).ConfigureAwait(false))
-                        .GetSubscriberAsync().ConfigureAwait(false));
+            return _connections.TryGetValue(connectionName, out var subscriber) ?
+                       subscriber :
+                       _connections[connectionName] = new RedisEventBusConnection(await (await _provider.GetConnectionAsync(connectionName, timeout, ct)
+                                                                                                        .ConfigureAwait(false))
+                                                                                        .GetSubscriberAsync()
+                                                                                        .ConfigureAwait(false),
+                                                                                  _connectionLogger);
         }
 
         public async Task<IEventBusSubscriberConnection> GetSubscriberConnectionAsync(string connectionName,

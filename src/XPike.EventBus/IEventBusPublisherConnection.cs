@@ -6,6 +6,8 @@ namespace XPike.EventBus
 {
     public interface IEventBusPublisherConnection
     {
-        Task<bool> PublishAsync<TMessage>(string targetName, TMessage message, TimeSpan? timeout = null, CancellationToken? ct = null);
+        Task<bool> PublishAsync<TMessage>(string targetName, TMessage message, TimeSpan? timeout = null,
+            CancellationToken? ct = null)
+            where TMessage : class;
     }
 }

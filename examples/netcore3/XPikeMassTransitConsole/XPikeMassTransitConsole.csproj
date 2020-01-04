@@ -6,15 +6,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="MassTransit.RabbitMQ" Version="6.0.1" />
     <PackageReference Include="XPike.IoC.SimpleInjector" Version="1.0.3" />
     <PackageReference Include="XPike.Logging" Version="1.1.1" />
     <PackageReference Include="XPike.Settings" Version="1.1.4" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\examples\Example.Library\Example.Library.csproj" />
-    <ProjectReference Include="..\..\src\XPike.EventBus.Redis\XPike.EventBus.Redis.csproj" />
-    <ProjectReference Include="..\..\wip\XPike.EventBus.RabbitMQ\XPike.EventBus.RabbitMQ.csproj" />
+    <ProjectReference Include="..\..\Example.Library\Example.Library.csproj" />
   </ItemGroup>
 
 </Project>

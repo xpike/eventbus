@@ -25,6 +25,7 @@ namespace XPike.EventBus
             PublicationType publicationType, 
             TimeSpan? timeout = null, 
             CancellationToken? ct = null)
+            where TMessage : class
         {
             connectionName = string.IsNullOrWhiteSpace(connectionName) ? "default" : connectionName;
 
@@ -41,6 +42,7 @@ namespace XPike.EventBus
             PublicationType publicationType,
             TimeSpan? timeout = null,
             CancellationToken? ct = null)
+            where TMessage : class
         {
             connectionName = string.IsNullOrWhiteSpace(connectionName) ? "default" : connectionName;
 

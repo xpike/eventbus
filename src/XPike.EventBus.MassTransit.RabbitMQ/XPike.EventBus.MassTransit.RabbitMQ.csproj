@@ -5,13 +5,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="RabbitMQ.Client" Version="5.1.2" />
+    <PackageReference Include="MassTransit.RabbitMQ" Version="6.0.0" />
     <PackageReference Include="XPike.Configuration" Version="1.1.6" />
     <PackageReference Include="XPike.Logging" Version="1.1.1" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\XPike.EventBus\XPike.EventBus.csproj" />
+    <ProjectReference Include="..\XPike.EventBus\XPike.EventBus.csproj" />
   </ItemGroup>
 
 </Project>

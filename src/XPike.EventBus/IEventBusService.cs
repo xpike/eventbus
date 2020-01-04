@@ -8,18 +8,20 @@ namespace XPike.EventBus
     {
         bool AddConnectionProvider(string connectionName, IEventBusConnectionProvider provider);
 
-        Task<bool> PublishAsync<TMessage>(string connectionName, 
-            string targetName, 
-            TMessage message, 
+        Task<bool> PublishAsync<TMessage>(string connectionName,
+            string targetName,
+            TMessage message,
             PublicationType publicationType,
             TimeSpan? timeout = null,
-            CancellationToken? ct = null);
+            CancellationToken? ct = null)
+            where TMessage : class;
 
-        Task<bool> SubscribeAsync<TMessage>(string connectionName, 
-            string targetName, 
-            Func<TMessage, Task<bool>> asyncHandler, 
+        Task<bool> SubscribeAsync<TMessage>(string connectionName,
+            string targetName,
+            Func<TMessage, Task<bool>> asyncHandler,
             PublicationType publicationType,
             TimeSpan? timeout = null,
-            CancellationToken? ct = null);
+            CancellationToken? ct = null)
+            where TMessage : class;
     }
 }
